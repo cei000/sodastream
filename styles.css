@@ -9,7 +9,7 @@ body{
     padding: 0;
     margin: 0;
     color: #d1d0cf;
-    background: #160d2e;
+    background: #03000d;
 }
 .container-fluid{
     padding: 0 100px;
@@ -20,7 +20,7 @@ header#main-header{
     right: 0;
     text-align: center;
     z-index: 99;
-    background: #160d2e !important;
+    background: #03000d !important;
     backdrop-filter: blur(10px);
 }
 header .navbar-light .navbar-brand img.logo{
@@ -31,7 +31,7 @@ header .navbar .menu-header-menu-container, header .navbar .menu-main-menu-conta
     width: 100%;
 }
 a{
-    color: #cca5ff;
+    color: #bfafd4;
     text-decoration: none;
     outline: medium none;
     transition: all 0.5s ease-out 0s;
@@ -57,4 +57,7 @@ header .navbar ul li.menu-item a{
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
+}
+header .navbar ul li.menu-item a:hover{
+    color: #8e829d !important;
 }
