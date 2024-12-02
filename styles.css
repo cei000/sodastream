@@ -248,6 +248,58 @@ header .navbar ul li .sub-menu li:hover>a::before{
     visibility: hidden;
     z-index: 999;
 }
+.more-menu.show{
+    opacity: 1;
+    transform: translate(0,0);
+    visibility: visible;
+}
+
+header .navbar ul li:last-child{
+    margin-right: 0;
+}
+
+.nav-item span.dots{
+    height: 10px;
+    width: 10px;
+    font-size: 0;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    border-radius: 50%;
+}
+.menu-right .nav-items span.dots{
+    right: 0;
+}
+
+.navbar-right li .iq-sub-dropdown .iq-sub-card{
+    position: relative;
+    font-size: inherit;
+    padding: 15px 15px;
+    line-height: normal;
+    color: inherit;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 0 0 1px 0;
+    border-image-source: linear-gradient(to right, rgba(209,208,207,0.6), rgba(209,208,207,0.3), rgba(209,208,207,0));
+}
+.iq-sub-card.setting-dropdown{
+    padding: 15px 15px 15px 0 !important;
+
+}
+
+.navbar-right li .iq-sub-dropdown a.iq-sub-card:last-child{
+    border-bottom: 0;
+}
+.notify-bg{
+    overflow: hidden;
+    z-index: 99;
+}
+
 
 
 
