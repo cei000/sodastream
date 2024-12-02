@@ -299,7 +299,142 @@ header .navbar ul li:last-child{
     overflow: hidden;
     z-index: 99;
 }
+.notify-bg::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 70px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-30deg);
+    animation: noti-before-animation 2s infinite 2s;
+}
 
+.notify-bg::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-30deg);
+    animation: noti-after-animation 2s infinite 2s;
+}
+
+.navbar-right .iq-sub-dropdown .iq-card-body div{
+    border-radius: 0;
+}
+
+.navbar-right .iq-show .iq-sub-dropdown,  .iq-show .search-box{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0,0);
+}
+
+.navbar-right .iq-sub-dropdown{
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    background: #191919;
+    transform: translate(0,70px);
+    transition: all 0.3s;
+    padding: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out 0s;
+    z-index: 1;
+}
+.navbar-light .navbar-toggler-icon{
+    background: url(assets/menu.png) no-repeat scroll center center;
+}
+.search-toggle:hover, header .navbar ul li.menu-item a:hover{
+    color: #7300ff !important;
+}
+.search-wrapper{
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    vertical-align: bottom;
+}
+.searchbutton{
+    position: absolute;
+    font-size: 22px ;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    right: 16px;
+    color: #d1d0cf;
+}
+
+.search:focus+.searchbutton{
+    transition-duration: 0.4s;
+    color: #7300ff;
+}
+.search:hover+.searchbutton{
+    color: #fff;
+}
+
+.search{
+    position: absolute;
+    left: 49px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    padding: 0 0 0 16px;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+.search:focus, .search:hover{
+    width: 350px;
+    padding: 0;
+    border-color: #d1d0cf;
+}
+.expandright{
+    left: auto;
+    right: -6px;
+    bottom: -2px;
+}
+.search::placeholder{
+    color: #fff !important;
+}
+
+.noti-svg{
+    animation: notify 1.5s ease infinite;
+    fill: #d1d0cf;
+}
+
+.noti-svg:hover{
+    fill: #7c0208;
+}
+
+.search-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 46px;
+    min-width: 25rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(0,70px);
+    transition: all 0.3s ease-out 0s;
+    box-shadow:  0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
 
 
 
