@@ -1219,7 +1219,7 @@ li.slide-item .block-images::after{
     transition: all 0.6s ease 0s;
 }
 small, .text-small, span{
-    font-size: 40px;
+    font-size: 15px;
 }
 
 a:focus, a:hover{
