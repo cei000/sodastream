@@ -809,7 +809,7 @@ header#main-header.menu-sticky{
 
 .channel-logo{
     border-left: 5px solid #8563ae;
-    background: transparent linear-gradient(270deg, rgba(11,1,2,0) 0%, rgba(255,55,65,0.3) 100%);
+    background: transparent linear-gradient(270deg, rgba(11,1,2,0) 0%, rgba(141, 62, 232, 0.3) 100%);
     padding: 10px 10px 10px 15px;
     width: 255px;
     position: relative;
@@ -1219,7 +1219,7 @@ li.slide-item .block-images::after{
     transition: all 0.6s ease 0s;
 }
 small, .text-small, span{
-    font-size: 14px;
+    font-size: 40px;
 }
 
 a:focus, a:hover{
@@ -1656,11 +1656,10 @@ ul#top-ten-slider .slick-bg::before{
 .s-margin{
     margin-top: 40px;
 }
-/*Sign up Page******/
-/* Sign up Page ******/
 
+/* Sign up Page */
 body {
-    background-image: url("img/login5.jpg");
+    background-image: url("img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1684,7 +1683,7 @@ body {
 .input-field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; /* Add space between input fields */
+    margin-bottom: 20px; 
 }
 
 .input-field .input {
@@ -1732,15 +1731,46 @@ label a {
     text-decoration: none;
 }
 
-/* New rule for Remember Me checkbox */
 input[type="checkbox"] {
-    width: 16px; /* Smaller width */
-    height: 16px; /* Smaller height */
-    margin-right: 10px; /* Space between checkbox and label */
-    accent-color: #fff; /* Optional: Adds a color to the checkbox */
+    width: 16px; 
+    height: 16px; 
+    margin-right: 10px; 
+    accent-color: #fff; 
 }
 
-/* Adjust the label for better alignment with checkbox */
 .remember-label {
     display: flex;
-    align-items: center; /* Ensures 
+    align-items: center; 
+}
+
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 20px; 
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 50%; 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 
+}
+
+
+/* Footer */
+body {
+    padding-bottom: 40px;
+  }
+
