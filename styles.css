@@ -1765,12 +1765,13 @@ input[type="checkbox"] {
 }
 
 .social-icon:hover {
-    background-color: rgba(255, 255, 255, 
+    background-color: rgba(255, 255, 255,) 
 }
 
 
-/* Footer */
-body {
-    padding-bottom: 40px;
-  }
+/***Sign Up***/
 
+/* Top header (Contact Us) */
+.top-header header {
+    font-size: 32px; /* Larger font for the header */
+}
